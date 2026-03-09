@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #202124;
+  background: #f6f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.subtitle {
+  color: #5f6368;
+}
+
+.chat-window {
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 420px;
+  max-height: 60vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bubble {
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  max-width: 85%;
+  line-height: 1.4;
+}
+
+.bubble.assistant {
+  background: #eef3fd;
+  align-self: flex-start;
+}
+
+.bubble.user {
+  background: #d8f7e3;
+  align-self: flex-end;
+}
+
+.error {
+  color: #b3261e;
+  margin: 0.75rem 0;
+}
+
+.composer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.composer input {
+  flex: 1;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+.composer button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.composer button:disabled {
+  background: #9aa0a6;
+  cursor: not-allowed;
+}
